@@ -4,13 +4,13 @@
 # Jiayi Wang                                                        #
 #####################################################################
 
-setwd("/Users/haocabbage/Desktop/550.431")
+setwd("/Users/haocabbage/Desktop/550.431/550.431-course-project")
 
 # convert the training images to a 256x256 matrix
 # which represents the observed x at each pixel
 library(png)
-training <- readPNG("training_ss_149.png")[, , 1] # training image
-seg <- readPNG("training_seg_149.png")[, , 1] # segmented training image
+training <- readPNG("images/training_ss_149.png")[, , 1] # training image
+seg <- readPNG("images/training_seg_149.png")[, , 1] # segmented training image
 test <- readPNG("test_ss_155.png")[, , 1] # test image
 seg_test <- readPNG("test_seg_155.png")[, , 1] # segmented test image
 
